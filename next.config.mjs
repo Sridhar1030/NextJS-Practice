@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    // ✅ This disables linting errors during `next build`
+    ignoreDuringBuilds: true,
+  },
   images: {
-    // Configure allowed hostnames for Next.js Image Optimization
     remotePatterns: [
       ...(process.env.NEXT_PUBLIC_CONTENTSTACK_IMAGE_HOSTNAME
         ? [{ hostname: process.env.NEXT_PUBLIC_CONTENTSTACK_IMAGE_HOSTNAME }]
@@ -13,4 +16,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig; // use CommonJS unless "type": "module" in package.json

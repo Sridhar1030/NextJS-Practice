@@ -15,6 +15,7 @@ export default function Home() {
     setPage(page); 
   };
 
+
   useEffect(() => {
     initLivePreview(); 
     ContentstackLivePreview.onEntryChange(getContent); 
@@ -22,7 +23,7 @@ export default function Home() {
 
   return (
     <main className="max-w-(--breakpoint-md) mx-auto">
-      Hello world!!
+      Hello world in nextJS!!
     </main>
   );
 }

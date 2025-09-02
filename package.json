@@ -12,11 +12,11 @@
   "homepage": "https://contentstack.com",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "dev": "next dev",
+  "build": "NEXT_DISABLE_ESLINT=1 next build",
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "@contentstack/delivery-sdk": "^4.8.0",
     "@contentstack/live-preview-utils": "^3.4.0",

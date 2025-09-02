@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main className="max-w-(--breakpoint-md) mx-auto">
-      Hello world
+      Hello world!!
     </main>
   );
 }
